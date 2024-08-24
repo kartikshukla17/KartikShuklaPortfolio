@@ -1,0 +1,60 @@
+.kalam-light {
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kalam-regular {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kalam-bold {
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .tiro-devanagari-hindi-regular {
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .tiro-devanagari-hindi-regular-italic {
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kalam", sans-serif;
+  }
+
+#nameImage {
+
+  }
+.lang {
+
+}
+
+.introduction {
+
+}
+.picture{
+
+}
+
+.box {
+
+}
+#coverImage{
+
+}
+#projectName{
+    
+}
