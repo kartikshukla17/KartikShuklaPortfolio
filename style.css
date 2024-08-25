@@ -34,7 +34,39 @@
     align-items: center;
     font-family: "Tiro Devanagari Hindi", serif;
     font-weight: 700;
+    font-size: large;
   }
+.containerHindi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-weight: 700;
+  font-size: large;
+}
+
+.hindiPage,
+.englishPage {
+  border: 1px solid #333;
+  border-radius: 20px;
+  color: #888;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: white;
+  box-sizing: inherit;
+  margin-left: 5px;
+  font-weight: 700;
+}
+.hindiPage {
+  background-color: #333;
+  color: white;
+}
+.englishPage:hover{
+  border: 1px solid #1a202c;
+  color: #1a202c;
+  background-color: #f6f7fb;
+}
 
 .header {
   width: 800px;
@@ -178,3 +210,4 @@
   width: 300px;
   margin: 16px 0px 16px 0px;
 }
+
