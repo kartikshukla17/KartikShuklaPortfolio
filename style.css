@@ -32,29 +32,149 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Kalam", sans-serif;
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-weight: 700;
   }
 
+.header {
+  width: 800px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
 #nameImage {
-
+  object-fit: contain;
+  border: none;
+  width: 300px;
   }
-.lang {
-
+.hindi,
+.english {
+  border: 1px solid #333;
+  border-radius: 20px;
+  color: #888;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: white;
+  box-sizing: inherit;
+  margin-left: 5px;
+  font-weight: 700;
+}
+.english {
+  background-color: #333;
+  color: white;
+}
+.hindi:hover{
+  border: 1px solid #1a202c;
+  color: #1a202c;
+  background-color: #f6f7fb;
 }
 
+
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  max-width: 100%;
+  padding: 64px 64px;
+}
 .introduction {
-
+  width: 800px;
+  display: flex;
+  background-color: #f6f7fb;
+  border-radius: 50px;
+  margin-bottom: 30px;
 }
-.picture{
-
+#picture{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-right: 80px;
+}
+#work {
+  margin: -15px 0px -15px 0px;
 }
 
 .box {
-
+  width: 800px;
+  height: 52px;
+  display: flex;
+  background-color: #f6f7fb;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
 }
-#coverImage{
 
+#Resume {
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  height: 50px;
+  width: 200px;
+  border: 1px solid #999;
+  color: #999;
+  border-radius: 32px;
 }
-#projectName{
-    
+#Resume:hover {
+  border: 1px solid #1a202c;
+  color: #1a202c;
+  background-color: #f6f7fb;
+}
+
+
+.footer {
+  text-align: center;
+  width: 800px;
+}
+
+#nameImageFooter {
+  object-fit: contain;
+  border: none;
+  width: 117px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  vertical-align: baseline;
+  margin-bottom: -50px;
+}
+
+.details {
+  font-weight: 700;
+  
+}
+.connect {
+  margin-bottom: 40px;
+}
+
+.coverImageProjects {
+  border: 3px solid #f6f7fb;
+  border-radius: 16px;
+  height: 500px;
+  width: 300px;
+  margin: 16px 0px 16px 0px;
+}
+.coverImageBlogs {
+  border: 3px solid #f6f7fb;
+  border-radius: 16px;
+  height: 180px;
+  width: 300px;
+  margin: 16px 0px 16px 0px;
+}
+
+.song {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.songBox {
+  border: 3px solid #f6f7fb;
+  border-radius: 16px;
+  height: 300px;
+  width: 300px;
+  margin: 16px 0px 16px 0px;
 }
