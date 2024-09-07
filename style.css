@@ -139,6 +139,8 @@
   border-radius: 16px;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
+  font-size: large;
 }
 
 #Resume {
@@ -211,3 +213,59 @@
   margin: 16px 0px 16px 0px;
 }
 
+.greetings {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 700px;
+  height: 40px;
+  justify-content: left;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-top: -80px;
+}
+
+.typing::after {
+  color: #1a202c;
+  content: '|';
+  animation: blink 0.5s infinite step-start;
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+.Developments{
+  display: flex;
+  box-sizing: inherit;
+}
+.details {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: inherit;
+  margin-left: 50px;
+}
+
+#projectName{
+  line-height: 24px;
+  margin: 40px 0 30px;
+  color: black;
+}
+#text{
+  font-weight: 300;
+}
+
+.github{
+  align-items: center;
+  border-radius: 8px;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  background-color: white ;
+  border: 1px solid #cdcdcd;
+}
+.github:hover {
+  background-color: #ececec;
+}
