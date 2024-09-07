@@ -240,7 +240,7 @@
   display: flex;
   box-sizing: inherit;
 }
-.details {
+.detail {
   width: 500px;
   display: flex;
   flex-direction: column;
