@@ -9,14 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
             i++;
             if (i === greetingText.length) {
                 clearInterval(interval);
-                setTimeout(callback, 1000); // Wait for 1 second before clearing and showing the next greeting
+                setTimeout(callback, 1000); 
             }
-        }, 100); // Adjust typing speed here (100ms per character)
+        }, 100); 
     }
 
     function showNextGreeting() {
         greetings.forEach((greet, index) => {
-            greet.textContent = ''; // Clear previous text
+            greet.textContent = ''; 
             greet.style.display = 'none';
         });
 
@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Set the dataset.text to the original greeting text
+    
     greetings.forEach(greet => {
         greet.dataset.text = greet.textContent;
     });
 
-    showNextGreeting(); // Start the typing effect
+    showNextGreeting(); 
 });
