@@ -29,6 +29,10 @@
   body{
     font-size: calc(16px + 0.5vw);
   }
+  .subContainer{
+    padding: 20px;
+  }
+
   .greetings, .details p {
     font-size: calc(18px + 0.3vw);
   }
@@ -84,7 +88,7 @@
     font-weight: 700;
     font-size: large;
   }
-
+  
   .containerHindi {
     display: flex;
     flex-direction: column;
@@ -127,7 +131,7 @@
     background-color: #f6f7fb;
   }
   
-  .header {
+.header {
     width: 800px;
     align-items: center;
     display: flex;
@@ -294,6 +298,7 @@
 .Developments{
   display: flex;
   box-sizing: inherit;
+  width: 800px;
 }
 .detail {
   width: 500px;
