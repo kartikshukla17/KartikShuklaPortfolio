@@ -39,37 +39,37 @@
   @media (max-width: 1024px) {
     .subContainer,
     .containerHindi {
-      padding: 20px;
-      width: 90%;
+        padding: 20px;
+        width: 90%;
     }
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .subContainer,
     .containerHindi {
-      padding: 20px;
+        padding: 20px;
+        width: 95%; 
     }
-  }
 
-  @media (max-width: 768px) {
     .Developments {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .introduction {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .subContainer,
     .containerHindi {
-      padding: 20px;
-      width: 400px;
+        padding: 15px;
+        width: 90%; 
     }
-  }
+}
+
   #nameImage, #picture, #nameImageFooter {
     width: 100%;
     max-width: 300px;
