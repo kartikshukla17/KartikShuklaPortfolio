@@ -4,6 +4,7 @@
   --text-color: #333;
   --accent-color: #007bff;
   --background-color: #f0f4f8;
+  --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -13,6 +14,7 @@ body {
   background-color: var(--background-color);
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 .container {
@@ -32,8 +34,8 @@ body {
   margin-bottom: 2rem;
 }
 
-.logo {
-  width: 20vw;
+#nameImage {
+  width: 150px; /* Reduced size of the name logo */
   height: auto;
 }
 
@@ -68,26 +70,29 @@ body {
 }
 
 .greetings {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   display: flex;
   align-items: center;
+  justify-content: center; /* Center the text horizontally */
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   color: var(--primary-color);
   text-align: center;
+  height: 60px; /* Fixed height to prevent bounce effect */
+  overflow: hidden; /* Hide overflow to avoid layout shifts */
+  position: relative; /* For smooth text transitions */
 }
 
-.typing::after {
-  content: '|';
-  animation: blink 0.5s infinite step-start;
+.greeting {
+  position: absolute; /* Position each greeting absolutely */
+  opacity: 1; /* Start with hidden text */
+  transition: opacity 0.5s ease-in-out; /* Smooth fade transition */
 }
 
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
+.greeting.active {
+  opacity: 1; /* Show the active greeting */
 }
 
 .introduction {
@@ -99,7 +104,7 @@ body {
   padding: 1.5rem;
   width: 100%;
   margin-bottom: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--shadow-color);
   gap: 1.5rem;
 }
 
@@ -113,7 +118,6 @@ body {
 
 .details {
   font-weight: 700;
-  color: var(--primary-color);
   font-size: 1.2rem;
 }
 
@@ -122,7 +126,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
-  color: var(--primary-color);
 }
 
 .socials a img {
@@ -153,11 +156,9 @@ body {
 
 #picture {
   border-radius: 50%;
-  margin-left: 1rem;
-  margin-right: 6rem;
-  width: 300px;
-  height: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Slightly reduced size */
+  height: 200px;
+  box-shadow: 0 4px 8px var(--shadow-color);
   object-fit: cover;
 }
 
@@ -171,47 +172,45 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: var(--primary-color);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--shadow-color);
 }
 
 .subBox {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 2rem;
+  flex-direction: column; /* Changed to column for list format */
+  gap: 1.5rem;
 }
 
 .Developments {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Align items in a row */
+  text-align: center;
   align-items: center;
-  max-width: 300px;
   background-color: white;
   border-radius: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  padding: 2rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Developments:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px var(--shadow-color);
 }
 
 .coverImageProjects,
 .coverImageBlogs {
-  width: 100%;
-  max-width: 280px;
-  height: auto;
+  width: 100px; /* Reduced size for list format */
+  height: 100px;
   border-radius: 12px;
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease-in-out;
-}
-
-.coverImageProjects:hover,
-.coverImageBlogs:hover {
-  transform: scale(1.05);
+  margin-right: 1rem; /* Added margin for spacing */
+  object-fit: cover;
 }
 
 .detail {
-  width: 100%;
-  text-align: center;
+  flex: 1;
+  text-align: left; /* Align text to the left */
   color: var(--text-color);
 }
 
@@ -249,9 +248,7 @@ body {
   width: 100%;
   text-align: center;
   padding: 2rem 0;
-  background-color: var(--secondary-color);
   color: var(--primary-color);
-  border-top: 1px solid #e0e0e0;
 }
 
 #nameImageFooter {
@@ -277,7 +274,15 @@ body {
   }
 
   .Developments {
-    width: 100%;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+    text-align: center;
+  }
+
+  .coverImageProjects,
+  .coverImageBlogs {
+    margin-right: 0;
+    margin-bottom: 1rem;
   }
 }
 
@@ -292,7 +297,6 @@ body {
   }
 
   .greetings {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.25rem;
   }
 }
