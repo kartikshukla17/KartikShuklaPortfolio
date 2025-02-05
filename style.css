@@ -87,7 +87,7 @@ body {
 
 .greeting {
   position: absolute; /* Position each greeting absolutely */
-  opacity: 1; /* Start with hidden text */
+  opacity: 0; /* Start with hidden text */
   transition: opacity 0.5s ease-in-out; /* Smooth fade transition */
 }
 
@@ -256,7 +256,12 @@ body {
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 768px) {
+/* Enhanced Responsiveness */
+@media (max-width: 1200px) {
+  .container {
+    padding: 1.5rem;
+  }
+
   .introduction {
     flex-direction: column;
     align-items: center;
@@ -286,7 +291,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .container {
     padding: 1rem;
   }
@@ -298,5 +303,83 @@ body {
 
   .greetings {
     font-size: 1.25rem;
+  }
+
+  .lang {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hindi,
+  .english {
+    width: 100%;
+    text-align: center;
+  }
+
+  .introduction {
+    padding: 1rem;
+  }
+
+  .box {
+    padding: 0.75rem;
+  }
+
+  .Developments {
+    padding: 1rem;
+  }
+
+  .coverImageProjects,
+  .coverImageBlogs {
+    width: 80px;
+    height: 80px;
+  }
+
+  #projectName {
+    font-size: 1rem;
+  }
+
+  #text {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .greetings {
+    font-size: 1rem;
+  }
+
+  .introduction {
+    padding: 0.75rem;
+  }
+
+  .box {
+    padding: 0.5rem;
+  }
+
+  .Developments {
+    padding: 0.75rem;
+  }
+
+  .coverImageProjects,
+  .coverImageBlogs {
+    width: 60px;
+    height: 60px;
+  }
+
+  #projectName {
+    font-size: 0.875rem;
+  }
+
+  #text {
+    font-size: 0.75rem;
+  }
+
+  .github {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
   }
 }
